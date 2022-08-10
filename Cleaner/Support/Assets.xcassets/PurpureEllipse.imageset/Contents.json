@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "background-bubbles-circle-11563739540ter5tqdokj 1 (Traced).png",
+      "filename" : "1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Ellipse 2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

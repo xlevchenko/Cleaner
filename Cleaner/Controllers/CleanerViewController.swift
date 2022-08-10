@@ -11,6 +11,7 @@ class CleanerViewController: UIViewController {
     
     let rightBarButtonItem = RightBarButtonItem()
     let storageImageView = StorageImageView(frame: .zero)
+    let duplicateView = DuplicatesView(frame: .zero)
     
     
 
@@ -20,6 +21,7 @@ class CleanerViewController: UIViewController {
         
         configureBackground()
         setupStorageImageView()
+        setupDuplicateView()
     }
 
     
@@ -41,7 +43,7 @@ class CleanerViewController: UIViewController {
         layerGradient.position = view.center
         view.layer.addSublayer(layerGradient)
         
-        let bubblesView = UIImageView(image: UIImage(named: "backgroundBubbles"))
+        let bubblesView = UIImageView(image: UIImage(named: "BubblesBackground"))
         view.addSubview(bubblesView)
         bubblesView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -56,11 +58,23 @@ class CleanerViewController: UIViewController {
     //MARK: - Setup Storage ImageView
     func setupStorageImageView() {
         view.addSubview(storageImageView)
+        view.addSubview(duplicateView)
         
         NSLayoutConstraint.activate([
             storageImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            storageImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            storageImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            duplicateView.topAnchor.constraint(equalTo: storageImageView.bottomAnchor, constant: 20),
+            duplicateView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+    }
+    
+    
+    //MARK: - Setup Duplicate View
+    func setupDuplicateView() {
+        
+        
+        
     }
 }
 

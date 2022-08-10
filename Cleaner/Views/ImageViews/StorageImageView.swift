@@ -33,7 +33,7 @@ class StorageImageView: UIImageView {
     
     
     func configure() {
-        image = UIImage(named: "ellipse")
+        image = UIImage(named: "StoregeEllipse")
         translatesAutoresizingMaskIntoConstraints = false
         storageLabel.font = .systemFont(ofSize: 25)
         

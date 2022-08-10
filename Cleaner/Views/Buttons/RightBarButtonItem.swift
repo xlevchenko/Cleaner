@@ -22,7 +22,7 @@ class RightBarButtonItem: UIButton {
     
     private func configure() {
         setTitle(" CLEANER", for: .normal)
-        setImage(UIImage(named: "cleaner"), for: .normal)
+        setImage(UIImage(named: "Cleaner"), for: .normal)
         titleLabel?.font = .boldSystemFont(ofSize: 16)
         clipsToBounds = true
         layer.masksToBounds = true
