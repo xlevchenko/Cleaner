@@ -10,18 +10,23 @@ import UIKit
 class CleanerViewController: UIViewController {
     
     let rightBarButtonItem = RightBarButtonItem()
-    let storageImageView = StorageImageView(frame: .zero)
-    let duplicateView = DuplicatesView(frame: .zero)
+    let storageImageView = StorageInfoView(frame: .zero)
     
+    let duplicateView1 = DuplicatesView(frame: .zero, image: UIImage(named: "DuplicatesPhotos")!, sectionText: "Duplicates photos", countFiels: "120 files", duplicates: "20 duplicate ")
+    let duplicateView2 = DuplicatesView(frame: .zero, image: UIImage(named: "DuplicateScreenshots")!, sectionText: "Duplicate screenshots", countFiels: "12 files", duplicates: "2 duplicate")
+    let duplicateView3 = DuplicatesView(frame: .zero, image: UIImage(named: "DuplicateContacts")!, sectionText: "Duplicate contacts", countFiels: "30 contacts", duplicates: "7 duplicate")
+    
+    let storegeView1 = StorageView(frame: .zero, image: UIImage(named: "SecretStorage")!, sectionText: "SECRET STORAGE")
+    let storegeView2 = StorageView(frame: .zero, image: UIImage(named: "AllPhotos")!, sectionText: "ALL PHOTOS")
+    let storegeView3 = StorageView(frame: .zero, image: UIImage(named: "AllVideos")!, sectionText: "ALL VIDEOS")
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBarButtonItem)
-        
+
         configureBackground()
-        setupStorageImageView()
-        setupDuplicateView()
+        setupConstraints()
     }
 
     
@@ -55,26 +60,44 @@ class CleanerViewController: UIViewController {
     }
     
     
-    //MARK: - Setup Storage ImageView
-    func setupStorageImageView() {
+    //MARK: - Setup Constraints
+    func setupConstraints() {
         view.addSubview(storageImageView)
-        view.addSubview(duplicateView)
-        
+
+        view.addSubview(duplicateView1)
+        view.addSubview(duplicateView2)
+        view.addSubview(duplicateView3)
+
+        view.addSubview(storegeView1)
+        view.addSubview(storegeView2)
+        view.addSubview(storegeView3)
+
         NSLayoutConstraint.activate([
-            storageImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            storageImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            storageImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
+            storageImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            storageImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+
+            duplicateView2.topAnchor.constraint(equalTo: storageImageView.bottomAnchor, constant: 40),
+            duplicateView2.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+
+            duplicateView1.topAnchor.constraint(equalTo: duplicateView2.bottomAnchor, constant: -50),
+            duplicateView1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+
+            duplicateView3.topAnchor.constraint(equalTo: duplicateView2.bottomAnchor, constant: -50),
+            duplicateView3.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+
+            storegeView1.topAnchor.constraint(equalTo: duplicateView2.bottomAnchor, constant: 40),
+            storegeView1.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
-            duplicateView.topAnchor.constraint(equalTo: storageImageView.bottomAnchor, constant: 20),
-            duplicateView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            storegeView2.topAnchor.constraint(equalTo: storegeView1.bottomAnchor, constant: -50),
+            storegeView2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            storegeView2.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            
+            storegeView3.topAnchor.constraint(equalTo: storegeView1.bottomAnchor, constant: -50),
+            storegeView3.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            storegeView3.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
+
         ])
-    }
-    
-    
-    //MARK: - Setup Duplicate View
-    func setupDuplicateView() {
-        
-        
-        
     }
 }
 

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		60744A8828A3F90B00115AD7 /* UIView + Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60744A8728A3F90B00115AD7 /* UIView + Layout.swift */; };
-		60744A8B28A3FBDD00115AD7 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60744A8A28A3FBDD00115AD7 /* VerticalStackView.swift */; };
 		60744A8D28A436CB00115AD7 /* DuplicatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60744A8C28A436CB00115AD7 /* DuplicatesView.swift */; };
+		60752F3B28A51D7100B81CCC /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60752F3A28A51D7100B81CCC /* StorageView.swift */; };
 		60DF4DAF28A3AEF30065797D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DAE28A3AEF30065797D /* AppDelegate.swift */; };
 		60DF4DB128A3AEF30065797D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DB028A3AEF30065797D /* SceneDelegate.swift */; };
 		60DF4DB328A3AEF30065797D /* CleanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DB228A3AEF30065797D /* CleanerViewController.swift */; };
@@ -17,15 +17,15 @@
 		60DF4DBB28A3AEF50065797D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60DF4DBA28A3AEF50065797D /* Assets.xcassets */; };
 		60DF4DBE28A3AEF50065797D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DF4DBC28A3AEF50065797D /* LaunchScreen.storyboard */; };
 		60DF4DCA28A3B7220065797D /* RightBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DC928A3B7220065797D /* RightBarButtonItem.swift */; };
-		60DF4DD028A3F19E0065797D /* StorageImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DCF28A3F19E0065797D /* StorageImageView.swift */; };
+		60DF4DD028A3F19E0065797D /* StorageInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DCF28A3F19E0065797D /* StorageInfoView.swift */; };
 		60DF4DD228A3F3B20065797D /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DD128A3F3B20065797D /* TitleLabel.swift */; };
 		60DF4DD428A3F3E50065797D /* SecondaryTitleLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DF4DD328A3F3E50065797D /* SecondaryTitleLable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60744A8728A3F90B00115AD7 /* UIView + Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Layout.swift"; sourceTree = "<group>"; };
-		60744A8A28A3FBDD00115AD7 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		60744A8C28A436CB00115AD7 /* DuplicatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicatesView.swift; sourceTree = "<group>"; };
+		60752F3A28A51D7100B81CCC /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		60DF4DAB28A3AEF30065797D /* Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DF4DAE28A3AEF30065797D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60DF4DB028A3AEF30065797D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		60DF4DBD28A3AEF50065797D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60DF4DBF28A3AEF50065797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DF4DC928A3B7220065797D /* RightBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBarButtonItem.swift; sourceTree = "<group>"; };
-		60DF4DCF28A3F19E0065797D /* StorageImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageImageView.swift; sourceTree = "<group>"; };
+		60DF4DCF28A3F19E0065797D /* StorageInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfoView.swift; sourceTree = "<group>"; };
 		60DF4DD128A3F3B20065797D /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		60DF4DD328A3F3E50065797D /* SecondaryTitleLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryTitleLable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +54,6 @@
 		60744A8928A3FBC700115AD7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				60744A8A28A3FBDD00115AD7 /* VerticalStackView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -146,8 +145,9 @@
 		60DF4DCE28A3F1510065797D /* ImageViews */ = {
 			isa = PBXGroup;
 			children = (
-				60DF4DCF28A3F19E0065797D /* StorageImageView.swift */,
+				60DF4DCF28A3F19E0065797D /* StorageInfoView.swift */,
 				60744A8C28A436CB00115AD7 /* DuplicatesView.swift */,
+				60752F3A28A51D7100B81CCC /* StorageView.swift */,
 			);
 			path = ImageViews;
 			sourceTree = "<group>";
@@ -222,17 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DF4DD028A3F19E0065797D /* StorageImageView.swift in Sources */,
+				60DF4DD028A3F19E0065797D /* StorageInfoView.swift in Sources */,
 				60DF4DB328A3AEF30065797D /* CleanerViewController.swift in Sources */,
 				60DF4DAF28A3AEF30065797D /* AppDelegate.swift in Sources */,
 				60DF4DB928A3AEF30065797D /* Cleaner.xcdatamodeld in Sources */,
+				60752F3B28A51D7100B81CCC /* StorageView.swift in Sources */,
 				60DF4DD228A3F3B20065797D /* TitleLabel.swift in Sources */,
 				60DF4DCA28A3B7220065797D /* RightBarButtonItem.swift in Sources */,
 				60DF4DD428A3F3E50065797D /* SecondaryTitleLable.swift in Sources */,
 				60744A8828A3F90B00115AD7 /* UIView + Layout.swift in Sources */,
 				60DF4DB128A3AEF30065797D /* SceneDelegate.swift in Sources */,
 				60744A8D28A436CB00115AD7 /* DuplicatesView.swift in Sources */,
-				60744A8B28A3FBDD00115AD7 /* VerticalStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

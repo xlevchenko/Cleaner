@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "du1.png",
+      "filename" : "1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "du2.png",
+      "filename" : "2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
