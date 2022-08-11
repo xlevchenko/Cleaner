@@ -20,7 +20,9 @@ class CleanerViewController: UIViewController {
     let storegeView2 = StorageView(frame: .zero, image: UIImage(named: "AllPhotos")!, sectionText: "ALL PHOTOS")
     let storegeView3 = StorageView(frame: .zero, image: UIImage(named: "AllVideos")!, sectionText: "ALL VIDEOS")
     
+    let conatinerView = UIView()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBarButtonItem)
@@ -62,22 +64,20 @@ class CleanerViewController: UIViewController {
     
     //MARK: - Setup Constraints
     func setupConstraints() {
-        view.addSubview(storageImageView)
-
-        view.addSubview(duplicateView1)
-        view.addSubview(duplicateView2)
-        view.addSubview(duplicateView3)
-
-        view.addSubview(storegeView1)
-        view.addSubview(storegeView2)
-        view.addSubview(storegeView3)
-
+        
+        view.addSubviews(conatinerView, duplicateView1, duplicateView2, duplicateView3, storegeView1, storegeView2, storegeView3)
+        conatinerView.addSubview(storageImageView)
+        conatinerView.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            storageImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150),
-            storageImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            storageImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
+            conatinerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
+            conatinerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            conatinerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            storageImageView.centerXAnchor.constraint(equalTo: conatinerView.centerXAnchor),
+            storageImageView.centerYAnchor.constraint(equalTo: conatinerView.centerYAnchor),
 
-            duplicateView2.topAnchor.constraint(equalTo: storageImageView.bottomAnchor, constant: 40),
+            duplicateView2.topAnchor.constraint(equalTo: conatinerView.bottomAnchor, constant: 40),
             duplicateView2.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 
             duplicateView1.topAnchor.constraint(equalTo: duplicateView2.bottomAnchor, constant: -50),
@@ -96,7 +96,6 @@ class CleanerViewController: UIViewController {
             storegeView3.topAnchor.constraint(equalTo: storegeView1.bottomAnchor, constant: -50),
             storegeView3.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             storegeView3.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50)
-
         ])
     }
 }

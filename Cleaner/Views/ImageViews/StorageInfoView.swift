@@ -37,9 +37,6 @@ class StorageInfoView: UIImageView {
         translatesAutoresizingMaskIntoConstraints = false
         storageLabel.font = .systemFont(ofSize: 20)
         
-        //constrainHeight(constant: 200)
-        //constrainWidth(constant: 200)
-        
         setupConstraints()
     }
     
